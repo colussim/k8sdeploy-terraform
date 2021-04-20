@@ -22,13 +22,13 @@ Before you get started, you’ll need to have these things:
 
 Clone the repository and install the dependencies:
 
-{% highlight ruby %}
+'''
 
 $ git clone https://github.com/colussim/k8sdeploy-terraform.git
 $ cd k8sdeploy
 $ terraform init
 
-{% endhighlight %}
+'''
 
 ## Usage
 
