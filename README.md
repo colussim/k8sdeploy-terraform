@@ -116,7 +116,7 @@ $ ssh -L 8888:10.105.212.255:443 root@bandol
 Now you can access the dashboard on your computer at http://localhost:8888.
 Paste the token value :
 
-![KUBconnect, the Kubernetes Dashboard connexion](gettoken.png)
+![KUBconnect, the Kubernetes Dashboard connexion](images/gettoken.png)
 
 
 ![KUBdash, the Kubernetes Dashboard](ui-dashboard.png)
