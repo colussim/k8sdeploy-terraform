@@ -84,7 +84,7 @@ sauvignon   Ready    worker                 3d21h   v1.21.0
 ```
 
 To access the dashboard you’ll need to find its cluster IP :
-{% highlight ruby %}
+```
 $ kubectl --kubeconfig $PWD/admin.conf -n kubernetes-dashboard get svc --selector=k8s-app=kubernetes-dashboard
 
 NAME                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
