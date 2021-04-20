@@ -57,15 +57,15 @@ This will do the following :
 
 Scale up by add hostname or ip address in *worker* variable
 
-{% highlight ruby %}
+```
 -var='worker=["sauvignon","cabernet","xxxxxxx"]'
-{% endhighlight %}
+```
 
 Tear down the whole Terraform plan with :
 
-{% highlight ruby %}
+```
 $ terraform destroy -force
-{% endhighlight %}
+```
 
 Resources can be destroyed using the terraform destroy command, which is similar to terraform apply but it behaves as if all of the resources have been removed from the configuration.
 
@@ -73,7 +73,7 @@ Resources can be destroyed using the terraform destroy command, which is similar
 
 Check if your cluster works:
 
-{% highlight ruby %}
+```
 $ kubectl --kubeconfig $PWD/admin.conf get nodes
 
 NAME        STATUS   ROLES                  AGE     VERSION
@@ -81,7 +81,7 @@ bandol      Ready    control-plane,master   3d21h   v1.21.0
 cabernet1   Ready    worker                 3d21h   v1.21.0
 sauvignon   Ready    worker                 3d21h   v1.21.0
 
-{% endhighlight %}
+```
 
 To access the dashboard you’ll need to find its cluster IP :
 {% highlight ruby %}
@@ -90,7 +90,7 @@ $ kubectl --kubeconfig $PWD/admin.conf -n kubernetes-dashboard get svc --selecto
 NAME                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
 kubernetes-dashboard   ClusterIP   10.105.212.255   <none>        443/TCP   19h
 
-{% endhighlight %}
+```
 
 Get token for the connection to the dashboard :
 {% highlight ruby %}
@@ -104,14 +104,14 @@ $ kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard \
   iPPQNvwrBu6updtqpI1tnU1A4lKzV70GS7pcoqqHMl26D1l0C4-IbZdd1oFJz3XnbTNy70WEMiVp
   2O8F1EKCYYpQ
   $
-{% endhighlight %}
+```
 
 copy and paste the token value in the dashboard connection window (in next step)
 
 Open a SSH tunnel:
-{% highlight ruby %}
+```
 $ ssh -L 8888:10.105.212.255:443 root@bandol
-{% endhighlight %}
+```
 
 Now you can access the dashboard on your computer at http://localhost:8888.
 Paste the token value :
