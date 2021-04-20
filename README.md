@@ -18,6 +18,9 @@ Before you get started, you’ll need to have these things:
   * Generate a ras ssh key.
   * Update the authorized_keys file with the public keys
 
+## Infra
+![infra, the Kubernetes infra](images/infra.png)
+
 ## Initial setup
 
 Clone the repository and install the dependencies:
@@ -119,7 +122,7 @@ Paste the token value :
 ![KUBconnect, the Kubernetes Dashboard connexion](images/gettoken.png)
 
 
-![KUBdash, the Kubernetes Dashboard](ui-dashboard.png)
+![KUBdash, the Kubernetes Dashboard](images/ui-dashboard.png)
 
 ## Conclusion
 
