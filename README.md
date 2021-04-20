@@ -22,26 +22,26 @@ Before you get started, you’ll need to have these things:
 
 Clone the repository and install the dependencies:
 
-'''
+```
 
 $ git clone https://github.com/colussim/k8sdeploy-terraform.git
 $ cd k8sdeploy
 $ terraform init
 
-'''
+```
 
 ## Usage
 
 Create an bare-metal Kubernetes cluster with one master and two nodes:
 
-{% highlight ruby %}
+```
 $ terraform apply \
  -var="docker_version=20.10.6-3.el7" \
  -var="k8s_version=1.21.0-0.x86_64" \
  -var="master=bandol" \
  -var='worker=["sauvignon","cabernet"]' \
  -var="clustername=epc-eco"
-{% endhighlight %}
+```
 
 If you use the ***terraform apply*** command without parameters the default values will be those defined in the ***variables.tf*** file.
 
