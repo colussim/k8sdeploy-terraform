@@ -93,7 +93,7 @@ kubernetes-dashboard   ClusterIP   10.105.212.255   <none>        443/TCP   19h
 ```
 
 Get token for the connection to the dashboard :
-{% highlight ruby %}
+```
 $ kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard \
   get sa/admin-user -o jsonpath="{.secrets[0].name}") \
   -o go-template="{{.data.token | base64decode}}"
