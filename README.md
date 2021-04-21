@@ -28,7 +28,7 @@ Clone the repository and install the dependencies:
 ```
 
 $ git clone https://github.com/colussim/k8sdeploy-terraform.git
-$ cd k8sdeploy
+$ cd k8sdeploy-terraform
 $ terraform init
 
 ```
