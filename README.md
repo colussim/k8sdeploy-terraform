@@ -1,3 +1,5 @@
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) Kubernetes 	![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+
 # k8sdeploy-terraform
 Installing Kubernetes on bare-metal with Terraform and kubeadm
 Setting up a Kubernetes cluster with Terraform, kubeadm and Weave Net on RedHat Enterprise Linux bare-metal servers
